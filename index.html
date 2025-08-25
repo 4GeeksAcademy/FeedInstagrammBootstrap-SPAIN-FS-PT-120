@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <div class="container-fluid ps-0 pe-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+      <div class="container">
+        <a class="navbar-brand" href="https://www.instagram.com/">
+          <img src="igii.png" alt="Bootstrap" width="20" height="20">
+          <img src="letra.png" alt="Bootstrap" width="80" height="35">
+        </a>
+        <div class="navbar-nav">
+          <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#miModal">Create a new post</button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="miModal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Crear un nuevo post</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <label><strong>Caption:</strong></label>
+                  <p><textarea rows="5" cols="40" placeholder="Agrega el pie de foto aquí"></textarea></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dropdown -->
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-grey" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="die1.png" alt="Bootstrap" width="15" height="15">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<!-- Contenido de las tabs -->
+<div class="tab-content" id="myTabContent">
+  <!-- PROFILE -->
+  <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel">
+    <!--Menu de navegacion--> 
+   <div class="p-0 ms-3 top-0 start-0" style="padding-left:5px; padding-top:100px;">
+ <div class="d-flex align-items-start overflow-visible" style="height:0;">
+
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical"
+         style="border-right: 1px solid #ccc; padding-right:10px;">
+      
+  
+<!-- Botón de Inicio -->
+<button class="nav-link mb-3 active" 
+        id="v-pills-home-tab" 
+        data-bs-toggle="pill" 
+        data-bs-target="#v-pills-home" 
+        type="button" 
+        role="tab" 
+        aria-controls="v-pills-home" 
+        aria-selected="true" 
+        style="text-align: left;"> 
+    <img src="casaig.png" alt="Imagen" width="20" height="20" class="me-3"> 
+    Inicio
+</button>
+
+<!-- Botón de Búsqueda -->
+<button class="nav-link mb-3" 
+        id="v-pills-profile-tab" 
+        data-bs-toggle="pill" 
+        data-bs-target="#v-pills-profile"
+        type="button" 
+        role="tab" 
+        aria-controls="v-pills-profile" 
+        aria-selected="false" 
+        style="text-align: left;">
+    <img src="lupaig.png" alt="Imagen" width="20" height="20" class="me-3"> 
+    Busqueda
+</button>
+
+<!-- Botón de Explorar -->
+<button class="nav-link mb-3" 
+        id="v-pills-messages-tab" 
+        data-bs-toggle="pill" 
+        data-bs-target="#v-pills-messages" 
+        type="button" 
+        role="tab" 
+        aria-controls="v-pills-messages" 
+        aria-selected="false"  
+        style="text-align: left;">
+    <img src="exploradorig.png" alt="Imagen" width="20" height="20" class="me-3">
+    Explorar
+</button>
+
+<!-- Botón de Reels -->
+<button class="nav-link mb-3" 
+        id="v-pills-settings-tab" 
+        data-bs-toggle="pill" 
+        data-bs-target="#v-pills-settings" 
+        type="button" 
+        role="tab" 
+        aria-controls="v-pills-settings" 
+        aria-selected="false"  
+        style="text-align: left;">
+    <img src="reelig.png" alt="Imagen" width="20" height="20" class="me-3">
+    Reels
+</button>
+
+<!-- Botón de Mensajes -->
+<button class="nav-link mb-3" 
+        id="v-pills-settings-tab" 
+        data-bs-toggle="pill" 
+        data-bs-target="#v-pills-settings" 
+        type="button" 
+        role="tab" 
+        aria-controls="v-pills-settings" 
+        aria-selected="false"  
+        style="text-align: left;">
+    <img src="mensajeig.png" alt="Imagen" width="20" height="20" class="me-3">
+    Mensajes
+</button>
+
+<!-- Botón de Notificaciones -->
+<button class="nav-link mb-3" 
+        id="v-pills-settings-tab" 
+        data-bs-toggle="pill" 
+        data-bs-target="#v-pills-settings" 
+        type="button" 
+        role="tab" 
+        aria-controls="v-pills-settings" 
+        aria-selected="false"  
+        style="text-align: left;">
+    <img src="13.webp" alt="Imagen" width="20" height="20" class="me-3">
+    Notificaciones
+</button>
+ 
+
+<!--Botono de perfil-->
+    <button class="nav-link mb-3" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"  style="text-align: left;">
+      <img src="2.png" alt="Imagen" width="20" height="20" class="me-3">
+    Crear</button>
+<button class="nav-link mb-3"  
+        id="v-pills-profile-user-tab"  
+        data-bs-toggle="pill" 
+        data-bs-target="#v-pills-profile-user"  
+        type="button" role="tab" 
+        aria-controls="v-pills-profile-user" 
+        aria-selected="false"  
+        style="text-align: left;">
+  <img src="1.png" alt="Imagen" width="20" height="20" class="me-3">
+  Perfil
+</button>
+
+  </div>
+  <div class="tab-content" id="v-pills-tabContent">
+    
+  </div>
+</div>
+    </div>
+  </div>
+<div style="position: absolute; top: 100px; right: 20px; width: 250px;">
+  <div class="d-flex flex-column" style="gap: 15px;">
+     <div class="d-flex align-items-center">
+      <img src="https://picsum.photos/50/50?random=6" alt="usuario 6" class="me-2 border rounded-circle">
+      <span>@NopuedoMarta😭😔</span>
+    </div>
+    <p><strong>Sugerencias para ti</strong> ver todo</p>
+    <div class="d-flex align-items-center">
+      <img src="https://picsum.photos/50/50?random=1" alt="usuario 1" class="me-2 border rounded-circle">
+      <span>@sunshine✨🌞</span>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <img src="https://picsum.photos/50/50?random=2" alt="usuario 2" class="me-2 border rounded-circle">
+      <span>@moonlight🌙🌌</span>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <img src="https://picsum.photos/50/50?random=3" alt="usuario 3" class="me-2 border rounded-circle">
+      <span>@traveler🌍✈️</span>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <img src="https://picsum.photos/50/50?random=4" alt="usuario 4" class="me-2 border rounded-circle">
+      <span>@foodie🍔🍕</span>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <img src="https://picsum.photos/50/50?random=5" alt="usuario 5" class="me-2 border rounded-circle">
+      <span>@artist🎨🖌️</span>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <img src="https://picsum.photos/50/50?random=6" alt="usuario 6" class="me-2 border rounded-circle">
+      <span>@fitness💪🏋️</span>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <img src="https://picsum.photos/50/50?random=7" alt="usuario 7" class="me-2 border rounded-circle">
+      <span>@nature🌿🍃</span>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <img src="https://picsum.photos/50/50?random=8" alt="usuario 8" class="me-2 border rounded-circle">
+      <span>@music🎵🎸</span>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+  
+<style> .story-border {
+  border: 4px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  background-clip: padding-box;
+  padding: 3px;
+}</style>
+
+  <!-- CONTENEDOR DE IMÁGENES REDONDAS CENTRADAS -->
+ <div class="d-flex justify-content-center gap-3 mb-3 mt-2">
+
+  <div class="text-center">
+    <img src="https://picsum.photos/400?random=10" 
+         class="rounded-circle story-border" 
+         style="width:100px; height:100px; object-fit:cover;">
+    <p style="margin-top:5px; font-size:14px;">🌟StarGirl</p>
+  </div>
+
+  <div class="text-center">
+    <img src="https://picsum.photos/400?random=11" 
+         class="rounded-circle story-border" 
+         style="width:100px; height:100px; object-fit:cover;">
+    <p style="margin-top:5px; font-size:14px;">🚀RocketMan</p>
+  </div>
+
+  <div class="text-center">
+    <img src="https://picsum.photos/400?random=12" 
+         class="rounded-circle story-border" 
+         style="width:100px; height:100px; object-fit:cover;">
+    <p style="margin-top:5px; font-size:14px;">💖LoveBug</p>
+  </div>
+
+  <div class="text-center">
+    <img src="https://picsum.photos/400?random=13" 
+         class="rounded-circle story-border" 
+         style="width:100px; height:100px; object-fit:cover;">
+    <p style="margin-top:5px; font-size:14px;">🔥HotShot</p>
+  </div>
+
+  <div class="text-center">
+    <img src="https://picsum.photos/400?random=14" 
+         class="rounded-circle story-border" 
+         style="width:100px; height:100px; object-fit:cover;">
+    <p style="margin-top:5px; font-size:14px;">🌈Rainbow</p>
+  </div>
+
+  <div class="text-center">
+    <img src="https://picsum.photos/400?random=15" 
+         class="rounded-circle story-border" 
+         style="width:100px; height:100px; object-fit:cover;">
+    <p style="margin-top:5px; font-size:14px;">🎵MusicLover</p>
+  </div>
+
+</div>
+
+
+   <div class="d-flex justify-content-center  pt-4">
+  <div class="d-flex flex-column" 
+       style="max-height: 700px; gap: 25px; overflow-y: auto; width: 32rem;">
+
+    <div class="card" style="width: 100%;">
+      <div class="card-header d-flex justify-content-between">
+        <span>Explorando vibes ✨🌈</span>
+        <span>12 Ago 2025</span>
+      </div>
+      <img src="https://picsum.photos/640/400?random=201" class="card-img-top border" alt="imagen 1">
+      <div class="card-body">
+        <p class="card-text">
+          Algo cool por aqui 😎🌟 #RandomMood #FunTimes #GoodVibes #EmojiLife
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 100%;">
+      <div class="card-header d-flex justify-content-between">
+        <span>Momentos locos 🚀🔥</span>
+        <span>10 Ago 2025</span>
+      </div>
+      <img src="https://picsum.photos/640/400?random=202" class="card-img-top border" alt="imagen 2">
+      <div class="card-body">
+        <p class="card-text">
+          Solo vibes y nada mas 😂💫 #RandomFun #LifeIsCrazy #EmojiTime #LOL
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 100%;">
+      <div class="card-header d-flex justify-content-between">
+        <span>Cositas random 🌀💖</span>
+        <span>08 Ago 2025</span>
+      </div>
+      <img src="https://picsum.photos/640/400?random=203" class="card-img-top border" alt="imagen 3">
+      <div class="card-body">
+        <p class="card-text">
+          Que se yo 😅✨ #FunStuff #RandomLife #EmojiVibes #ChillMode
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="tab-content">
+  <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab">
+    <div class="container px-2 mt-3">
+      <div class="row row-cols-3 g-2">
+        <div class="col"><img src="https://picsum.photos/400?random=1" class="img-fluid w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400?random=2" class="img-fluid w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400?random=3" class="img-fluid w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400?random=4" class="img-fluid w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400?random=5" class="img-fluid w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400?random=6" class="img-fluid w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400?random=7" class="img-fluid w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400?random=8" class="img-fluid w-100"></div>
+        <div class="col"><img src="https://picsum.photos/400?random=9" class="img-fluid w-100"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
